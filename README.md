@@ -21,11 +21,25 @@
 
 | Features  |
 | ------------- |
-|Audio & headphone jack(only audio, for mic only over usb)|
+|Audio & headphone jack|
 |AMD CPU Power management|
-|iGPU with disabled dGPU|
+|iGPU|
 |Battery Management|
 |Ethernet|
 |HDMI|
 |WebCam|
 |Usb 3.0 + Type C|
+
+
+<h1>What's not Working...</h1>
+
+| Features  |
+| ------------- |
+|microphone & microphone headphone jack(only audio, for mic only over usb)|
+|smbus for fan speed reading|
+|Dgpu|
+|sleep|
+|wi-fi&bluetooth|
+|touchpad|
+|some specific Intel apps|
+|sometimes keyboard stop working when i tap the touchpad|
