@@ -19,7 +19,7 @@
 
 <h1>What's Working...</h1>
 
-| First Header  |
+| Features  |
 | ------------- |
 |Audio & headphone jack(only audio, for mic only over usb)|
 |AMD CPU Power management|
