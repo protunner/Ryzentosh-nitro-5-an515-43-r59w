@@ -11,7 +11,7 @@
 |DGPU:          | NVIDIA Geforce GTX 1650(disabled bumblebee method)<br>|
 |RAM:           | 32gb ram 2666mhz dual channel(UMAF dram overclock)<br>|
 |ETHERNET:      | Realtek rtl8111                                       |<br>
-|AUDIO:         | AMD 17h/19h family                                    |<br>
+|AUDIO:         | AMD 17h/19h family/ALC 255                                |<br>
 |WIFI&BLUETOOTH:| qualcomm atheros qca61x4                              |<br>
 |DRIVE:         | M.2 NVME KINGSPEC NE-1TB                              |<br>
 |KEYBOARD:      | PS/2 keyboard                                         |<br>
