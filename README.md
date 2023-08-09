@@ -15,7 +15,7 @@
 |WIFI&BLUETOOTH:| qualcomm atheros qca61x4                              |<br>
 |DRIVE:         | M.2 NVME KINGSPEC NE-1TB                              |<br>
 |KEYBOARD:      | PS/2 keyboard                                         |<br>
-|TOUCHPAD:      | elan i2c(i realy doesnt know why doesn't work)        |<br><br>
+|TOUCHPAD:      | elan 0504 i2c hid
 
 <h1>What's Working...</h1>
 
@@ -29,6 +29,7 @@
 |HDMI|
 |WebCam|
 |Usb 3.0 + Type C|
+|trackpad with features|
 
 
 <h1>What's not Working...</h1>
@@ -40,6 +41,4 @@
 |Dgpu|
 |sleep|
 |wi-fi&bluetooth|
-|touchpad|
 |some specific Intel apps|
-|sometimes keyboard stop working when i tap the touchpad|
