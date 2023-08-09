@@ -29,7 +29,7 @@
 |HDMI|
 |WebCam|
 |Usb 3.0 + Type C|
-|trackpad with features|
+|trackpad with geatures|
 
 
 <h1>What's not Working...</h1>
