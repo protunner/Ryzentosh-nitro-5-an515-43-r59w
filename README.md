@@ -43,7 +43,7 @@
 |wi-fi&bluetooth|
 |some specific Intel apps|
 
-# Kexts included (**Required**)
+# Kexts included
 
 Kext|Description
 :----|:----
