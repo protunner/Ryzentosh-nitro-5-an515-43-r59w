@@ -42,3 +42,62 @@
 |sleep|
 |wi-fi&bluetooth|
 |some specific Intel apps|
+
+# Kexts included (**Required**)
+
+Kext|Description
+:----|:----
+[AMDRyzenCPUPowerManagement.kext](https://github.com/trulyspinach/SMCAMDProcessor/releases)|For [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor).
+[SMCAMDProcessor.kext](https://github.com/trulyspinach/SMCAMDProcessor/releases)|For [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor).
+[AppleMCEReporterDisabler.kext](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip)|Useful starting with Catalina to disable the AppleMCEReporter kext which will cause kernel panics on AMD CPUs and dual-socket systems.
+[Lilu.kext](https://github.com/acidanthera/Lilu/releases)|Patch many processes, required for AppleALC, WhateverGreen, VirtualSMC and many other kexts.
+[VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases)|Emulates the SMC chip found on real macs, without this macOS will not boot.<br>Alternative is FakeSMC which can have better or worse support, most commonly used on legacy hardware.
+[AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)|Used for AppleHDA patching, allowing support for the majority of on-board sound controllers.<br>AMD 15h/16h may have issues with this and Ryzen/Threadripper systems rarely have mic support.
+[RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)|For Realtek's Gigabit Ethernet.<br>Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.
+[NVMeFix](https://github.com/acidanthera/NVMeFix/releases)|Used for fixing power management and initialization on non-Apple NVMe.
+[RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)|Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.
+
+
+## Special notes - Mapping CORES for AMD CPU
+
+**Note for Zen 4:** Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext. <br>
+This patch is enabled by default. Please ensure that you've added it to your current config for Zen 4 stability. <br>
+This patch also allows MSI A520, B550, and X570 boards to boot macOS Monterey and newer. <br>
+
+Core Count patch needs to be modified to boot your system.<br>
+Find the four `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
+
+|   macOS Version      | Replace Value | New Value |
+|----------------------|---------------|-----------|
+| 10.13.x, 10.14.x     | B8000000 0000 | B8 < Core Count > 0000 0000 |
+| 10.15.x, 11.x        | BA000000 0000 | BA < Core Count > 0000 0000 |
+| 12.x, 13.0 to 13.2.1 | BA000000 0090 | BA < Core Count > 0000 0090 |
+| 13.3                 |  BA000000 00  | BA < Core Count > 0000 00 |
+
+From the table above substitue `< Core Count >` with the hexadecimal value matching your physical core count. <br>
+Do not use your CPU's thread count. <br>
+See the table below for the values matching your CPU core count.
+
+| Core Count | Hexadecimal |
+|------------|-------------|
+|   4 Core   |     `04`    |
+|   6 Core   |     `06`    |
+|   8 Core   |     `08`    |
+|   12 Core  |     `0C`    |
+|   16 Core  |     `10`    |
+|   24 Core  |     `18`    |
+|   32 Core  |     `20`    |
+
+So for example, a user with a 6-core processor should use these `Replace` values: `B8 06 0000 0000` / `BA 06 0000 0000` / `BA 06 0000 0090` / `BA 06 0000 00`
+
+**Note:** *MacOS Monterey installation requires `Misc -> Security -> SecureBootModel` to be disabled in the config.<br />Also TPM needs to be disabled in the BIOS. Both can be enabled after install.*
+
+
+# BIOS Settings
+
+### Disable
+- Fast Boot
+- Secure Boot
+
+- # References
+https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html
