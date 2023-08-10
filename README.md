@@ -8,7 +8,7 @@
 |MOTHERBOARD:   | Octavia_PKS                                           |<br>
 |BIOS:          | v1.12                                                 |<br>
 |IGPU:          | VEGA 8 1.5GB VRAM(can be changed on UMAF)             |<br>
-|DGPU:          | NVIDIA Geforce GTX 1650(disabled bumblebee method)<br>|
+|DGPU:          | NVIDIA Geforce GTX 1650(disabled)<br>|
 |RAM:           | 32gb ram 2666mhz dual channel(UMAF dram overclock)<br>|
 |ETHERNET:      | Realtek rtl8111                                       |<br>
 |AUDIO:         | AMD 17h/19h family/ALC 255                                |<br>
