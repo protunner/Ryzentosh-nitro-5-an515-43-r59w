@@ -95,6 +95,9 @@ So for example, a user with a 6-core processor should use these `Replace` values
 
 **Note:** *MacOS Monterey installation requires `Misc -> Security -> SecureBootModel` to be disabled in the config.<br />Also TPM needs to be disabled in the BIOS. Both can be enabled after install.*
 
+## Special notes - Mapping USB
+
+For usb mapping if usb toolbox make your hack because of 2 xhc controller, then you have to disable one of the controller on bios or via SMOKELESS UMAF, or use genericUSBXHCI from rehabman(using this you cant use usb drives, any complex usb thing than usb keyboard and mouse, but for that you can use a special fork from genericUSBXHCI (https://github.com/RattletraPM/GUX-RyzenXHCIFix/releases/tag/v1.3.0b1-ryzenxhcifix)
 
 # BIOS Settings
 
@@ -105,7 +108,7 @@ So for example, a user with a 6-core processor should use these `Replace` values
 - # References
 https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html
 
-<summary><strong> CREDITS </strong></summary>
+##CREDITS
     
 **[Acidanthera](https://github.com/acidanthera)** <br> 
 for making[OpenCore](https://github.com/acidanthera/OpenCorePkg) [VirtualSMC](https://github.com/acidanthera/VirtualSMC), [Lilu](https://github.com/acidanthera/Lilu), [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
@@ -116,3 +119,6 @@ for making [BASE-EFI-AMD-RYZEN-THREADRIPPER](https://github.com/luchina-gabriel/
 **[Dortania](https://dortania.github.io/)** <br> 
 for making [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) 
 and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/)
+
+**[RattletraPM](https://github.com/RattletraPM/GUX-RyzenXHCIFix)** <br>
+for making possible to use any complex usb devices on ryzen laptops wtih xhc controller issues
