@@ -121,4 +121,4 @@ for making [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCo
 and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/)
 
 **[RattletraPM](https://github.com/RattletraPM)** <br>
-for making possible to use any complex usb devices on ryzen laptops wtih xhc controller issues **[GUX-RyzenXHCIFix*]*(https://github.com/RattletraPM/GUX-RyzenXHCIFix)
+for making possible to use any complex usb devices on ryzen laptops wtih xhc controller issues **[GUX-RyzenXHCIFix](https://github.com/RattletraPM/GUX-RyzenXHCIFix)**
