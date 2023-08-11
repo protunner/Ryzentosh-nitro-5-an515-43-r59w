@@ -57,6 +57,9 @@ Kext|Description
 [NVMeFix](https://github.com/acidanthera/NVMeFix/releases)|Used for fixing power management and initialization on non-Apple NVMe.
 [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)|Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.
 
+Kext|Description
+:----|:----
+
 
 ## Special notes - Mapping CORES for AMD CPU
 
@@ -101,3 +104,15 @@ So for example, a user with a 6-core processor should use these `Replace` values
 
 - # References
 https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html
+
+<summary><strong> CREDITS </strong></summary>
+    
+**[Acidanthera](https://github.com/acidanthera)** <br> 
+for making[OpenCore](https://github.com/acidanthera/OpenCorePkg) [VirtualSMC](https://github.com/acidanthera/VirtualSMC), [Lilu](https://github.com/acidanthera/Lilu), [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
+
+**[Gabriel Luchina](https://github.com/luchina-gabriel)**<br>
+for making [BASE-EFI-AMD-RYZEN-THREADRIPPER](https://github.com/luchina-gabriel/BASE-EFI-AMD-RYZEN-THREADRIPPER)
+
+**[Dortania](https://dortania.github.io/)** <br> 
+for making [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) 
+and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/)
