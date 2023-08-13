@@ -56,10 +56,13 @@ Kext|Description
 [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)|For Realtek's Gigabit Ethernet.<br>Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.
 [NVMeFix](https://github.com/acidanthera/NVMeFix/releases)|Used for fixing power management and initialization on non-Apple NVMe.
 [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)|Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.
+[NootedRed](https://github.com/NootInc/NootedRed/tree/master)|Used for AMD Vega iGPU support
 
-Kext|Description
-:----|:----
 
+## Special notes - graphics IGPU SUPPORT
+
+install after doing the OS instalation.<br>
+you can get the most recent versions of NootedRed on [NootedRed](https://github.com/NootInc/NootedRed/tree/master)
 
 ## Special notes - Mapping CORES for AMD CPU
 
@@ -118,7 +121,10 @@ for making [BASE-EFI-AMD-RYZEN-THREADRIPPER](https://github.com/luchina-gabriel/
 
 **[Dortania](https://dortania.github.io/)** <br> 
 for making [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) 
-and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/)
+and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/) <br>
 
 **[RattletraPM](https://github.com/RattletraPM)** <br>
-for making possible to use any complex usb devices on ryzen laptops wtih xhc controller issues **[GUX-RyzenXHCIFix](https://github.com/RattletraPM/GUX-RyzenXHCIFix)**
+for making possible to use any complex usb devices on ryzen laptops wtih xhc controller issues **[GUX-RyzenXHCIFix](https://github.com/RattletraPM/GUX-RyzenXHCIFix)** <br>
+
+**[NootInc](https://github.com/NootInc)** <br>
+for making [NootedRed](https://github.com/NootInc/NootedRed)
